@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Início
+    </title>
+    <meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/9e78371ef2.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <header id="header">
+    <div class="vertical_burger">
+        <p class="menu">Menu</p>
+        <div class="vertical_slash"></div>
+        <div class="vertical_slash"></div>
+        <div class="vertical_slash"></div>
+        <div class="vertical_slash"></div>
+    </div>
+    <div class="navbar">
+        <a href="index">Página Inicial</a>
+        <a href="howToGetThere">Como chegar na festa</a>
+        <a href="store">Lista em loja</a>
+        <a href="rsvp">Confirmar presença</a>
+    </div>
+</header>
+        <!--========================================================
+                          CONTENT
+=========================================================-->
+        <div class="backgroundExit"></div>
+        <div class="mapContainer">
+            <div id="map"></div>
+        </div>
+        <button class="directionButton">
+            Traçar Rota
+        </button>
+        <div class="view place">
+            <h1>Locais da Festa</h1>
+            <div class="placeContainer">
+                <div class="ceremory">
+                    <div class="hexagon hexagon1">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2">
+                                <div class="hexagon-in3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Igreja do Carvalhido</h2>
+                    <p class="arrivalTime">11h30</p>
+                    <p>R. Dom António Meireles 140 </p>
+                    <p>4250-054 Porto</p>
+                    <div class="wrapButton1">
+                        <button class="mapButton">Ver Mapa</button>
+                    </div>
+                </div>
+                <div class="venue">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2">
+                                <div class="hexagon-in3-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Casa do Ribeirinho</h2>
+                    <p>R. Dr. José Ventura 31</p>
+                    <p>4250-245 Matosinhos</p>
+                    <div class="wrapButton2">
+                        <button class="mapButton">Ver Mapa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nextView"></div>
+
+        <!--========================================================
+                          FOOTER
+=========================================================-->
+        <footer id="footer">
+    
+</footer>
+            <script src="js/headerNavbarButtons.js"></script>
+            <script src="js/map.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmSaT90DLD9UJNmTltrbUAcB7jhrTOOZs&callback=initMap"></script>
+</body>
+
+</html>
