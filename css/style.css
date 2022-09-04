@@ -134,7 +134,7 @@ table {
 
 body {
   font-family: Arial, Helvetica, Sans-serif;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, rgba(223, 222, 202, 1) 0%, rgba(158, 178, 140, 1) 50%, rgba(223, 222, 202, 1) 100%);
   overflow-x: hidden;
@@ -461,6 +461,9 @@ img {
 }
 
 .navbar a {
+  position: relative;
+  left: 65%;
+  top: 50%;
   display: block;
   text-decoration: none;
   opacity: 0%;
@@ -469,7 +472,7 @@ img {
   font: 400 24px/32px "Roboto Slab", sans-serif;
   transform: translateY(100px);
   color: white;
-  background-image: linear-gradient(90deg, rgba(223, 222, 202, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(193, 193, 193, 1) 100%);
+  background-image: linear-gradient(90deg, rgba(223, 222, 202, 1) 0%, rgba(255, 255, 255, 1) 100%);
   background-size: 200% 0.25em;
   background-position: 200% 100%;
   background-repeat: no-repeat;
@@ -485,8 +488,8 @@ img {
 .navbar.show {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 65%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .navbar a.animationShow {
@@ -641,9 +644,8 @@ iframe.animationShow {
 .ceremory img,
 .storeItems img {
   width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
   margin-top: 30px;
 }
 
@@ -662,7 +664,7 @@ iframe.animationShow {
   font-style: normal;
   font-size: 50px;
   padding: 15px;
-  margin: auto auto 1em;
+  margin: auto;
   width: fit-content;
   color: #756300;
 }
@@ -703,7 +705,8 @@ iframe.animationShow {
 }
 
 .hexagon-in3,
-.hexagon-in3-1 {
+.hexagon-in3-1,
+.hexagon-in3-2 {
   width: 100%;
   height: 120%;
   background-repeat: no-repeat;
@@ -723,6 +726,11 @@ iframe.animationShow {
   background-image: url(/images/casa_ribeirinho.jpeg);
 }
 
+.hexagon-in3-2 {
+  background-size: 39em;
+  background-image: url(/images/punta_cana.jpeg);
+}
+
 .hexagon1 {
   width: 800px;
   height: 400px;
@@ -731,6 +739,12 @@ iframe.animationShow {
 .hexagon2 {
   width: 800px;
   height: 400px;
+}
+
+.hexagon3 {
+  margin-top: 50px;
+  width: 600px;
+  height: 300px;
 }
 
 .wrapButton1,
@@ -819,5 +833,71 @@ iframe.animationShow {
     width: 200px;
     height: 200px;
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(180deg, rgba(223, 222, 202, 1) 0%, rgba(158, 178, 140, 1) 100%);
+    ;
+  }
+
+  .view.small,
+  .nextView.small {
+    transform: scale(0.5, 0.5) translateX(-100%) perspective(2000px) rotate3d(0, 1, 0, 90deg);
+    perspective-origin: left center;
+  }
+
+  .navbar a {
+    top: 40%;
+    left: 0;
+    margin: 30px auto;
+  }
+
+  .view.place>h1,
+  .view.rsvp>h1,
+  .view.store>h1 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  .placeContainer,
+  .rsvpContainer,
+  .storeContainer {
+    max-width: 80%;
+  }
+
+  .venue h2,
+  .ceremory h2 {
+    font-size: 30px;
+  }
+
+  .venue img,
+  .ceremory img,
+  .storeItems img {
+    width: 250px;
+    height: 125px;
+  }
+
+  .hexagon1,
+  .hexagon2,
+  .hexagon3 {
+    width: 400px;
+    height: 200px;
+  }
+
+  .hexagon-in3 {
+    background-size: 25em;
+    background-position: -2em -3em;
+  }
+
+  .hexagon-in3-1 {
+    background-position: 4em 1em;
+    background-size: 18em;
+  }
+
+  .hexagon-in3-2 {
+    background-position: -8em -3em;
+    background-size: 38em;
   }
 }
