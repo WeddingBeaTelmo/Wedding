@@ -676,6 +676,34 @@ iframe.animationShow {
   margin: 20px 20px 10px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.storeItems .instTitle  {
+  width: 100%;
+}
+
+.storeItems h3 {
+  color: #564861;
+  margin: 20px 20px 10px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.storeItems .instruct {
+  color: #564861;
+  margin: 10px 20px 10px;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.storeItems .instruct-second {
+  color: #564861;
+  margin: 10px 40px 10px;
+  letter-spacing: 1px;
   font-size: 12px;
 }
 
